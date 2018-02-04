@@ -1,0 +1,23 @@
+page-home {
+
+}
+
+.temp {
+    display: inline-block;
+    mask: url('../assets/icon/temp.png') no-repeat center;
+    -webkit-mask: url('../assets/icon/temp.png') no-repeat center;
+    mask-size: 32px;
+    -webkit-mask-size: 32px;
+    background-color: #929292;
+}
+ 
+.temp-active i {
+    background-color: #03A9F4;
+}
+p{
+  line-height: 22px;
+}
+ 
+a.temp-active {
+    color: #03A9F4;
+}

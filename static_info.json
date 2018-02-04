@@ -1,0 +1,41 @@
+
+/*name : static_app_info*/
+{"tos":
+  {"mod_date":"12 May , 2017",
+    "a":{"title":"" , "Data" : "Please read these Terms of Service (“Terms”, “Terms of Service”) carefully before using this website (the “Service”) operated by People Finder (“us”, “we”, or “our”).  Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms of Service apply to all visitors, users and others who access or use the Service. By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service."},
+    "b":{"title":"Termination Of service" , "Data" : "data data data data data"},
+    "c":{"title":"Termination Of service" , "Data" : "data data data data data"},
+    "d":{"title":"Termination Of service" , "Data" : "data data data data data"},
+    "e":{"title":"Termination Of service" , "Data" : "data data data data data"}
+  },
+"faq":
+  {
+    "a":{"question":"Termination Of service" , "Data" : "data data data data data"},
+    "b":{"question":"Termination Of service" , "Data" : "data data data data data"},
+    "c":{"question":"Termination Of service" , "Data" : "data data data data data"},
+    "d":{"question":"Termination Of service" , "Data" : "data data data data data"},
+    "e":{"question":"Termination Of service" , "Data" : "data data data data data"},
+    "f":{"question":"Termination Of service" , "Data" : "data data data data data"},
+    "g":{"question":"Termination Of service" , "Data" : "data data data data data"},
+    "h":{"question":"Termination Of service" , "Data" : "data data data data data"}
+  },
+"paymentinfo":
+  {
+    "bank_name":"Standard Bank",
+    "account":"072 9879 79" ,
+    "amount":"R300" ,
+    "branch":"051 001" ,
+    "payment_reference":"Finder ID",
+    "text1":"Please note that it will take up to ",
+    "text2":"48Hrs for your finder ID to be activated ",
+    "text3":" from the moment of payment. Id expires after 1 year (360 days) from the day of activation."
+  },
+"contacts":
+  {
+    "Phone":"0846306659",
+    "Email":"carfinder@gmail.com",
+    "Website":"www.cfapp.co.za",
+    "Facebook":"@cfappafrica",
+    "Twitter":"@cfappafrica"
+  }
+}

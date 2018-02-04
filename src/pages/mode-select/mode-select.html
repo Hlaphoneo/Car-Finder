@@ -1,0 +1,11 @@
+<ion-content padding>
+    <button start class="modeselectbutton" (click)="logout()" style="background-color:white"><ion-icon class="backmodebutton"name="log-out" style="color:white"> </ion-icon> <h6 style="opacity:0.6"><small> log out </small></h6></button>
+    <div class="mode_connect"></div>
+    <div class="button_container" align="center">
+      <h5> Select device mode.</h5>
+      <br />
+        <button (click)="setMode(receiver);continueMessage('Device will run in Receiver mode')"  class="button_flat" ion-button icon-left color="orange"><ion-icon name="phone-portrait"></ion-icon>Reciever</button>
+        <button (click)="setMode(tracker);continueMessage('Device will run in Tracker mode');;setMode('tracker')" class="button_flat" ion-button icon-left color="secondary2"><ion-icon name="barcode"></ion-icon>Tracker</button>
+      <br>
+    </div>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar no-border-bottom hideBackButton = 'true'>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="this.navCtrl.pop()">
+            <ion-icon item-right name="close"></ion-icon>
+        </button>
+    </ion-buttons>
+        <ion-title>Payment Info</ion-title>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+    Bank Details - Paying for your Finder ID
+    </ion-list-header>
+    <ion-item>Bank Name : <b>{{appData.paymentinfo.bank_name}}</b></ion-item>
+    <ion-item>Account   : <b>{{appData.paymentinfo.account}}</b> </ion-item>
+    <ion-item>Amount   : <b>{{appData.paymentinfo.amount}}</b> </ion-item>
+    <ion-item>Branch    : <b>{{appData.paymentinfo.branch}}</b></ion-item>
+    <ion-item>Payment Reference   : <b>{{appData.paymentinfo.payment_reference}}</b></ion-item>
+  </ion-list>
+  <p align="center" >
+      {{appData.paymentinfo.text1}} <span style="color:#f53d3d"><strong>{{appData.paymentinfo.text2}}</strong></span><span style="color:#f53d3d"><strong>{{appData.paymentinfo.text3}}</strong> </span>
+  </p>
+  <hr />
+
+<p>
+  <br />
+<strong>
+Contact Us
+</strong>
+
+<br>
+Car Finder
+<br>
+<br>
+website : http://www.cfapp.co.za/<br>
+facebook : Car Finder - @cfappafrica <br>
+twitter : @cfappafrica<br>
+
+{{appData.paymentinfo.address}}
+carfinder@gmail.com
+</p>
+
+</ion-content>

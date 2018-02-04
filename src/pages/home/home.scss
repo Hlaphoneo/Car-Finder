@@ -1,0 +1,64 @@
+.search-icon{
+  margin-left: 8px;
+  font-size: 23px;
+}
+.find-car{
+  font-size: 20px
+}
+
+.setting_button {
+  font-size:25px !important;
+}
+
+#mapContainer{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -100;
+  position: fixed;
+}
+
+.location{
+  margin-top: 4%;
+  background-color: rgba(17,31,41,0.96);
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 9%;
+  max-height: 60px;
+  min-height: 55px;
+  border-radius: 8px;
+}
+
+#settings{
+  float: right;
+  margin-right: -5px !important;
+  font-size:40px;
+  margin-top: -20px
+
+}
+
+.trackers{
+  display: inline-flex;
+  font-size: 190% !important;
+}
+
+
+
+#tracker_name{
+  color: white;
+  text-transform: uppercase;;
+  position: relative;;
+  font-weight: 500;
+  float: right;
+
+}
+
+.modeButton{
+     position:absolute;
+     width:100px;
+     left:50%;
+     margin-left:-50px;
+     bottom: 0;
+}

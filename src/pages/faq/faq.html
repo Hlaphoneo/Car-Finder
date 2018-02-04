@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar no-border-bottom hideBackButton = 'true'>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="this.navCtrl.pop()">
+            <ion-icon item-right name="close"></ion-icon>
+        </button>
+    </ion-buttons>
+        <ion-title>FAQ ?</ion-title>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngFor="let question of appData.faq" >
+    <div>
+        <ion-list-header>
+        {{question.question}}
+        </ion-list-header>
+        <p align="left" ><strong>
+        {{question.Data}}
+        </strong></p>
+    </div>
+    <br />
+  </ion-list>
+
+
+
+
+
+</ion-content>

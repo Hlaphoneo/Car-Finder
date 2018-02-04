@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar hideBackButton = 'true'>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="this.close()">
+            <ion-icon item-right name="close"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>Help&Support</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+          <div class="logosupport" align="center"></div>
+    <ion-list no-lines>
+      <ion-item>
+        <ion-label align = "center" stacked color="primary">Please use the below options for support.<br>Contact us for more help&support.</ion-label>
+      </ion-item>
+    </ion-list>
+
+<!--
+    <div >
+      <button ion-button block type="submit" color="orange">ASsK</button>
+    </div> -->
+  <hr />
+  <h6 align="center" style="opacity:0.6"> <strong>Info</strong></h6>
+  <br />
+  <ion-list class="inbox">
+      <ion-item (click)="openInbox()">
+        <ion-avatar item-start>
+          <img src="assets/chat_inbox.png">
+        </ion-avatar>
+        <h2><strong>Support Inbox</strong></h2>
+        <ion-badge item-end>0</ion-badge>
+      </ion-item>
+      <ion-item (click)="payment()">
+        <ion-avatar item-start>
+          <img src="assets/pay_info.png">
+        </ion-avatar>
+        <h2><strong>Payment Info</strong></h2>
+      </ion-item>
+      <ion-item (click)="faq()">
+        <ion-avatar item-start>
+          <img src="assets/faq.png">
+        </ion-avatar>
+        <h2><strong>Frequently Asked Questions</strong></h2>
+      </ion-item>
+      <ion-item (click)="contact()">
+        <ion-avatar item-start>
+          <img src="assets/contact.png">
+        </ion-avatar>
+        <h2><strong>Contacts Us</strong></h2>
+      </ion-item>
+</ion-list>
+
+</ion-content>

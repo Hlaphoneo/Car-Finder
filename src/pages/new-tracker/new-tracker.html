@@ -1,0 +1,27 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New ID</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+
+
+  <div class="container">
+
+    <div class="demo-flex-spacer"></div>
+    <h5 align="center" style="opacity:0.5">FINDER ID</h5>
+          <input class="id" type="email" placeholder="Waiting for id" [(ngModel)]="id" disabled>
+    <div class="webflow-style-input">
+
+      <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
+    </div>
+    <button class="generate_id" ion-button color="orange" (click)="newID()" round>Generate id</button>
+    <h6 align="center" style="margin-top:15px;opacity:0.7"><small> Use this ID to connect your tracker to the Car Finder service.</small></h6>
+    <div class="demo-flex-spacer"></div>
+
+  </div>
+
+</ion-content>

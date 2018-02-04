@@ -1,0 +1,8 @@
+{
+  "name": "Car Finder",
+  "app_id": "com.carfinder.www",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

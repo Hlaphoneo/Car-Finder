@@ -1,0 +1,58 @@
+<ion-menu [content]="mycontent" (ionOpen)="deactivateMap()"  (ionClose)="bringMapToFront()">
+  <ion-content>
+<ion-list>
+  <ion-list-header no-lines>Manage Trackers</ion-list-header>
+  <ion-list>
+    <button ion-item (click)="openPage('managetracker')">My trackers</button>
+    <button ion-item (click)="openPage('support')">New ID</button>
+  </ion-list>
+  <ion-list-header no-lines>Settings</ion-list-header>
+  <ion-list>
+    <!-- <button ion-item (click)="openPage('managetracker')">Manage Trackers</button> -->
+    <button ion-item (click)="openPage('support')">Support/Help</button>
+    <button ion-item (click)="openPage('privacy')">Privacy/Settings</button>
+    <button ion-item (click)="changeMode()">Change Mode</button>
+  </ion-list>
+  </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+
+<ion-content>
+  <div id="mapContainer" >
+    <section class="location" padding>
+      <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <ion-icon menuToggle  class="trackers" name="menu" style="font-size:35px;margin-top:-15px;margin-left:-10px" color="secondary2"></ion-icon>
+          <!-- <ion-icon menuToggle (click)="openSettings($event)" class="trackers" name="menu" style="font-size:35px;margin-top:-15px;margin-left:-10px" color="secondary2"></ion-icon> -->
+        </ion-col>
+        <ion-col col-8 style="margin-top:-5px">
+          <span id="tracker_name" align="center" (click)="openTrackers()">
+            {{tracker.activeTrackers_inst[activeSelectedTrackerKey] ? tracker.activeTrackers_inst[activeSelectedTrackerKey].tracker_name : "No tracker selected"}}</span>
+
+        </ion-col>
+        <ion-col col-2 class="right-settings" style="margin-top:10px">
+
+            <ion-icon (click)="openTrackers()"  class="setting_button" id="settings" name="arrow-dropdown" color="secondary2"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </section>
+    <!-- <p id="tracker_message" align="center" style="margin-top:15%"> No trackers selected</p>
+        Key {{activeSelectedTrackerKey}}<br />
+
+        {{tracker.activeTrackers_inst[activeSelectedTrackerKey] ? tracker.activeTrackers_inst[activeSelectedTrackerKey].tracker_name : "waiting"}}<br />
+        {{tracker.activeTrackers_inst[activeSelectedTrackerKey] ? tracker.activeTrackers_inst[activeSelectedTrackerKey].battery_level : "waiting"}}<br />
+                ------------------------ cords ------------------<br />
+        {{tracker.activeTrackers_inst[activeSelectedTrackerKey] ? tracker.activeTrackers_inst[activeSelectedTrackerKey].y : "waiting"}}<br />
+        {{tracker.activeTrackers_inst[activeSelectedTrackerKey] ? tracker.activeTrackers_inst[activeSelectedTrackerKey].x : "waiting"}}<br />
+                ------------------------ more info  ------------------<br />
+        {{tracker.activeTrackers_inst[activeSelectedTrackerKey] ? tracker.activeTrackers_inst[activeSelectedTrackerKey].state : "waiting"}}<br />
+        {{tracker.activeTrackers_inst[activeSelectedTrackerKey] ? tracker.activeTrackers_inst[activeSelectedTrackerKey].mode : "waiting.."}}<br /> -->
+
+
+    <button class="modeButton"ion-button color="orange" (click)="changeMode()" style="box-shadow:none;border-radius:5px"> <span class="find-car">FIND</span> </button>
+  </div>
+</ion-content>

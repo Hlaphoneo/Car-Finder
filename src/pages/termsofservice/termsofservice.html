@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar no-border-bottom hideBackButton = 'true'>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="this.navCtrl.pop()">
+            <ion-icon item-right name="close"></ion-icon>
+        </button>
+    </ion-buttons>
+        <ion-title>Terms of Service</ion-title>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+<p><small> Last modified : {{appData.tos.mod_date}} </small></p>
+<p>
+  {{appData.tos.a.Data}}
+</p>
+
+<h5> {{appData.tos.b.title}}  </h5>
+  <p>
+    {{appData.tos.b.Data}}
+  </p>
+<p>
+</p>
+<h5>{{appData.tos.c.title}} </h5>
+<p>
+  {{appData.tos.c.Data}}
+</p>
+<h5>{{appData.tos.e.title}} </h5>
+<p>
+  {{appData.tos.e.Data}}
+</p>
+<h5>{{appData.tos.d.title}} </h5>
+<p>
+  {{appData.tos.d.Data}}
+<br>
+<br>
+<br>
+<strong>
+Contact Us
+
+If you have any questions about these Terms, please contact us.
+</strong>
+<br>
+<br>
+People Finder
+<br>
+<br>
+http://www.pfsouthafrica.co.za/
+<br>
+
+1343 Maile Street , Kgotsong , Bothaville , 9660
+<br>
+konzasystems@gmail.com
+</p>
+
+</ion-content>

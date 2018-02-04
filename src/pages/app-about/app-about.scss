@@ -1,0 +1,29 @@
+page-app-about{
+    .about-logo{
+      background-image:url(../assets/about.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      height:200px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 5%;
+    }
+
+    .center{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .descp{
+      color: white;
+      font-weight: 400;
+      margin-top: -5px
+    }
+
+    .button-about{
+      background: none;
+    }
+}

@@ -1,0 +1,45 @@
+<!--
+  Generated template for the ManageTrackersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton = 'true'>
+    <ion-title>Manage Trackers</ion-title>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="back()">
+            <ion-icon item-right name="close"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+  <ion-item-sliding *ngFor="let tracker_inst of tracker.allTrackers;let i=index" >
+      <ion-item (click)="openTracker(i)">
+        <ion-avatar item-start>
+          <!-- <img src="../assets/home_tracker_disconnected.png"> -->
+          <img src="{{ tracker_inst.link_status  ? 'assets/tracker_connected.png' || tracker_inst.link_status == 0 : 'assets/home_tracker_disconnected.png' }}">
+        </ion-avatar>
+        <h2>{{tracker_inst.tracker_id}}</h2>
+        <p>{{ tracker_inst.payment_status == 0  && 'Waiting Payment.' ||   (tracker_inst.link_status ==1  &&  tracker.activeTrackers_inst[tracker.allTrackers[i].tracker_id].tracker_name || 'Tracker not linked')   }} - {{ tracker_inst.link_status == 1  && (tracker.activeTrackers_inst[tracker.allTrackers[i].tracker_id].state == 1  && 'Online' || 'Offline') || 'Offline'}}</p>
+      </ion-item>
+      <ion-item-options side="right">
+          <button ion-button color="danger" (click)="disconnectTracker(i)">
+            <ion-icon name="close-circle"></ion-icon>
+            Disconnect
+          </button>
+      </ion-item-options>
+  </ion-item-sliding>
+
+</ion-list>
+<ion-fab right bottom>
+  <button ion-fab color="orange" (click)="addNewTracker()"><ion-icon name="add"></ion-icon></button>
+
+</ion-fab>
+</ion-content>

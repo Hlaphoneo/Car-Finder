@@ -1,0 +1,12 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list-header no-lines >Select Tracker</ion-list-header>
+  <ion-list style="overflow-y:scroll">
+      <button ion-item *ngFor="let tracker_inst of tracker.activeTrackers;let i=index" (click)="setActive(tracker_inst.tracker_id)">{{tracker.activeTrackers_inst[tracker.activeTrackers[i].tracker_id].tracker_name}}</button>
+
+      <!-- tracker.activeTrackers_inst[tracker.activeTrackers[i].tracker_id].tracker_name -->
+    </ion-list>
+</ion-content>

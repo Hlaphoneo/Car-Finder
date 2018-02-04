@@ -1,0 +1,25 @@
+<ion-content >
+
+<div >
+  <div class="topContainer">
+        <div class="logohome" align="center"></div>
+        <h4 align="center" style="color:white;margin-top:-5px"> CAR FINDER </h4>
+        <br>
+        <p align = "center" class="description" style="font-weight:500;color:white;margin-top:-10px"><span><strong>Tracking made simple.</strong></span></p>
+  </div>
+  <div padding>
+    <ion-item style="background:none" >
+      <ion-label   stacked>Email</ion-label>
+      <ion-input type="text" name="email" [(ngModel)]="email" style="font-weight:100;" ></ion-input>
+    </ion-item>
+    <ion-item style="background:none" >
+      <ion-label   stacked>Password</ion-label>
+      <ion-input type="password" name="password" [(ngModel)]="password" style="font-weight:100;"></ion-input>
+    </ion-item>
+  </div>
+    <div align="center" style="color: rgb(76,150,154);margin-top:-8px;margin-left:auto;margin-right:auto:display:block;opacity:0.7" padding>  <span (click)="presentModal()">Forgot password ?</span> </div>
+      <button basic  ion-button basic class="center" color="secondary2" style="width:230px;opacity:0.8;color:white;margin-top:-1px;box-shadow:none" (click)="emailLogin()">Sign in</button>
+      <div padding style="margin-top:-20px"><p align = "center"><strong><span style="``color: rgb(76,150,154)" (click)="emailSignupModal()" ><span style="color:rgb(76,150,154)"> JOIN NOW!</span> </span></strong><span style="font-weight:200"> </span><strong><span style="color: #3b5998" (click)="facebookLogin()"> </span></strong> </p></div>
+</div>
+    <h3 align="center"><small> {{error}} </small></h3>
+</ion-content>

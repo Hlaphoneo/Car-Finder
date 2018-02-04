@@ -1,0 +1,31 @@
+.top-containerSent{
+  background-color:rgba(255,0,61,0.99);
+  height: 100%;
+  min-height: 150px;
+}
+
+.page-header{
+  height: 40%;
+  min-height: 250px;
+}
+.battery_level{
+  background:none;
+  border: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.range_silder{
+  color: white
+}
+.range-slider{
+  font-color: blue;
+}
+.range-knob-handle,.range-knob{
+  border: none;
+  text-shadow: none;
+  background: none;
+
+}

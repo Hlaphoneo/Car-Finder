@@ -1,0 +1,27 @@
+
+<ion-content class="tracker_content" padding>
+  <button start style="background-color:#162322;margin-left:10px;margin-top:10px;font-size:30px;" (click)="back()"><ion-icon name="arrow-back" style="color:white"> </ion-icon></button>
+    <div class="state_img"></div>
+    <div class="tracker_info_container">
+        <ion-item style="background:none">
+          <ion-label stacked class="label_element"><span class="tracker_label">CAR NAME</span></ion-label>
+          <ion-input type="text" class="tracker_input" [(ngModel)]="trackerName" (change)="trackerName.toUpperCase()" ></ion-input>
+        </ion-item>
+        <ion-item style="background:none">
+          <ion-label stacked class="label_element"><span class="tracker_label">FINDER ID </span></ion-label>
+          <ion-input type="text" class="tracker_input" [(ngModel)]="finderID" (change)="this.finderID.toUpperCase()"></ion-input>
+        </ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-12>
+              <ion-item style="background:none" no-lines>
+              <h6 align="center"><span class="tracker_label">Status</span></h6>
+              <h6 align="center"><span class="status_message"><strong>{{trackerStatus}}</strong></span></h6>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+    </div>
+    <button ion-button class="connect_tracker_button" (click)="connect('new')" color="orange" >{{connectionText}}</button>
+</ion-content>

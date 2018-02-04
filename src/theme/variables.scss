@@ -1,0 +1,99 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    gray,
+  primary2 :  #FFF,
+  secondary:  #162322,
+  secondary2: #55FF00,
+  success:    #007536,
+  facebook:   #3b5998,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  customGreen : #0BFF5B,
+  base2       : #FFF,
+  addon1      : #FF5C55,
+  orange      : #F53D3D
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+  // $tabs-md-background    :  #162322;
+  // $tabs-md-background    :  #162322;
+  $toolbar-md-background :  rgba(17,31,41,0.90);;
+  // $toolbar-md-color :  white;
+  // $menu-md-background : #59D1AB;
+  // $tabs-md-tab-icon-color:white;
+  // $tabs-md-tab-icon-size : 18px;
+  $tabs-md-tab-text-color-active: #162322;
+  $tabs-md-tab-icon-color-active: #162322;
+  // $tabs-md-tab-opacity : 0.6;
+  $toast-md-background:rgba(255,92,94,0.90);
+  $item-md-thumbnail-size : 90px ;
+  $toolbar-md-title-text-color: map-get($colors, base2);
+  $toggle-md-track-width: 50px;
+  $toggle-md-track-height: 25px;
+
+  $menu-width	: 220px;
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";

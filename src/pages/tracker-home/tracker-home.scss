@@ -1,0 +1,79 @@
+.tracker_content {
+  background-color:  #162322;
+}
+.state_img{
+  background-image:url(../assets/tracker_disconnected.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  height:150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 15%;
+}
+.tracker_info_container{
+  margin-top: 10%;
+  background: none;
+  color:orange;
+}
+@media (max-width:320px){
+  .state_img{
+    background-image:url(../assets/tracker_disconnected_small.png);
+    margin-top: 5%;
+  }
+}
+
+.tracker_label{
+  color: #F53D3D;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.tracker_input{
+  text-decoration: overline;
+  color: white;
+  text-align: right
+}
+
+.status_message{
+  color: white;
+  font-weight: 400;
+  // font-style: italic;
+  // margin-top: 20px !important;
+}
+.connect_tracker_button{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 15px;
+  box-shadow: none;
+}
+
+.label_element,.tracker_label{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+
+}
+
+
+// ---------------------------------------------------------------- Animations ---------------------------------------------------------------
+
+.bring_to_front{
+  opacity: 1;
+}
+.take_to_back{
+  opacity: 0.6;
+}
+.connected{
+  @media (max-width:320px){
+    background-image:url(../assets/tracker_connected_small.png);
+  }
+      background-image:url("../assets/tracker_connected.png");
+}
+.buttonConnected{
+  background-color: #0AFF5F;
+  box-shadow: none;
+}

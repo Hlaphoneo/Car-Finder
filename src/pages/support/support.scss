@@ -1,0 +1,25 @@
+
+    .inbox{
+      max-height: 40%;
+    }
+    .center{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .logosupport{
+      background-image:url(../assets/support.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      height:128px;
+      width: 128px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .contacttoast{
+      background-color: rgba(15,20,24,0.85) !important;
+      color: blue !important;
+      white-space: pre-line;
+    }
